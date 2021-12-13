@@ -24,6 +24,12 @@ export const Container = styled.div`
 
     transition: filter 0.2s;
 
+    opacity: 0.56;
+
+    &.active {
+      opacity: 1;
+    }
+
     &:hover {
       filter: brightness(0.9);
     }

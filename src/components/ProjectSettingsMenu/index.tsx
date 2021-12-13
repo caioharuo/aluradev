@@ -1,6 +1,7 @@
+import { Button } from '../Button';
 import { Container, ProjectSettings, PersonalizationSettings } from './styles';
 
-export function ProjectMenu() {
+export function ProjectSettingsMenu() {
   return (
     <Container>
       <ProjectSettings>
@@ -22,8 +23,15 @@ export function ProjectMenu() {
           </optgroup>
         </select>
         <div className="input-color-wrapper">
-          <input type="color" name="color-picker" id="color-picker" />
+          <input
+            type="color"
+            name="color-picker"
+            id="color-picker"
+            value="#6BD1FF"
+          />
         </div>
+
+        <Button isOutline={false} text="Salvar projeto" />
       </PersonalizationSettings>
     </Container>
   );

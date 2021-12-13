@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   width: 100%;
+  padding: 2rem;
+  padding-bottom: 0;
 
   > div {
     display: flex;
@@ -11,6 +13,12 @@ export const Container = styled.header`
     margin-bottom: 2.5rem;
 
     input {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+
       width: 100%;
       height: 3.5rem;
       max-width: 752px;

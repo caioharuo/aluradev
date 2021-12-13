@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.form`
   h2 {
     font-size: 0.75rem;
     font-weight: normal;
@@ -69,6 +69,8 @@ export const PersonalizationSettings = styled.div`
 
   .input-color-wrapper {
     margin-top: 1rem;
+    margin-bottom: 2rem;
+
     border: 1px solid var(--white);
     border-radius: 0.5rem;
 

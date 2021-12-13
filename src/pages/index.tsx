@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { Header } from '../components/Header';
+import { CodeEditor } from '../components/CodeEditor';
 import { NavigationMenu } from '../components/NavigationMenu';
-import { ProjectMenu } from '../components/ProjectMenu';
+import { ProjectSettingsMenu } from '../components/ProjectSettingsMenu';
 import { Container } from './home';
 
 export default function Home() {
@@ -10,11 +10,11 @@ export default function Home() {
       <Head>
         <title>AluraDev</title>
       </Head>
-      <Header />
       <section>
         <main>
           <NavigationMenu />
-          <ProjectMenu />
+          <CodeEditor />
+          <ProjectSettingsMenu />
         </main>
       </section>
     </Container>

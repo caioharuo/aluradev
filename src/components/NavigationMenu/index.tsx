@@ -6,7 +6,7 @@ export function NavigationMenu() {
     <Container>
       <h2>Menu</h2>
       <nav>
-        <a href="">
+        <a href="#" className="active">
           <Image
             src="/images/code.svg"
             alt="Editor de código"
