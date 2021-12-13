@@ -8,6 +8,12 @@ export const Container = styled.div`
     main {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 1440px) {
+        & {
+          flex-direction: column;
+        }
+      }
     }
   }
 `;

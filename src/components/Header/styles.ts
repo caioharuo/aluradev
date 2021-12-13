@@ -39,9 +39,29 @@ export const Container = styled.header`
       &:hover {
         background: rgba(255, 255, 255, 0.24);
       }
+
+      @media (max-width: 1440px) {
+        & {
+          position: initial;
+          margin-left: 2.5rem;
+          margin-right: 2.5rem;
+        }
+      }
     }
 
-    > div {
+    .menu-hamburguer {
+      display: none;
+      width: 48px;
+      height: 48px;
+
+      @media (max-width: 1440px) {
+        & {
+          display: inline-block;
+        }
+      }
+    }
+
+    .user-info {
       display: flex;
       align-items: center;
 
@@ -49,6 +69,12 @@ export const Container = styled.header`
       border-radius: 0.5rem;
 
       transition: background 0.2s;
+
+      @media (max-width: 1440px) {
+        & {
+          display: none;
+        }
+      }
 
       &:hover {
         background: rgba(255, 255, 255, 0.08);

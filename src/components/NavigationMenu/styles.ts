@@ -38,4 +38,10 @@ export const Container = styled.div`
       margin-left: 1rem;
     }
   }
+
+  @media (max-width: 1440px) {
+    & {
+      display: none;
+    }
+  }
 `;

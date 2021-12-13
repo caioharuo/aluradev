@@ -10,6 +10,13 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
 
+  @media (max-width: 1440px) {
+    & {
+      position: initial;
+      max-width: 100%;
+    }
+  }
+
   .code-editor-border {
     position: relative;
 

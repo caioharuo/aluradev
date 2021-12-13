@@ -48,6 +48,12 @@ export const ProjectSettings = styled.div`
 
   input {
     max-width: 272px;
+
+    @media (max-width: 1440px) {
+      & {
+        max-width: 100%;
+      }
+    }
   }
 
   textarea {
@@ -58,6 +64,18 @@ export const ProjectSettings = styled.div`
     resize: none;
 
     margin-top: 1rem;
+
+    @media (max-width: 1440px) {
+      & {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1440px) {
+    & {
+      margin-top: 2.5rem;
+    }
   }
 `;
 
@@ -68,14 +86,24 @@ export const PersonalizationSettings = styled.div`
   margin-top: 2.5rem;
 
   .input-color-wrapper {
+    width: 100%;
+
     margin-top: 1rem;
     margin-bottom: 2rem;
 
     border: 1px solid var(--white);
     border-radius: 0.5rem;
 
+    @media (max-width: 1440px) {
+      & {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
     input[type='color'] {
       width: 100%;
+
       height: 56px;
       padding: 0.5rem;
 
@@ -93,6 +121,22 @@ export const PersonalizationSettings = styled.div`
     input[type='color']::-moz-color-swatch {
       border-color: transparent;
       border-radius: 0.25rem;
+    }
+  }
+
+  select {
+    width: 100%;
+    height: 56px;
+    max-height: 56px;
+  }
+
+  @media (max-width: 1440px) {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
     }
   }
 `;

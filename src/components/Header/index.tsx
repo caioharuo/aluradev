@@ -6,8 +6,15 @@ export function Header() {
     <Container>
       <div>
         <Image src="/images/logo.svg" alt="AluraDev" width={145} height={35} />
+
         <input type="text" placeholder="Busque por algo" />
-        <div>
+
+        <div className="menu-hamburguer">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/menu-icon.svg" alt="AluraDev" />
+        </div>
+
+        <div className="user-info">
           <Image
             src="https://github.com/caioharuo.png"
             alt="AluraDev"

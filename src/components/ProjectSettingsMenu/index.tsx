@@ -15,20 +15,23 @@ export function ProjectSettingsMenu() {
 
       <PersonalizationSettings>
         <h2>Personalização</h2>
-        <select name="language" id="language">
-          <optgroup label="Programming Languages" defaultValue="javascript">
-            <option value="javascript">JavaScript</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-          </optgroup>
-        </select>
-        <div className="input-color-wrapper">
-          <input
-            type="color"
-            name="color-picker"
-            id="color-picker"
-            value="#6BD1FF"
-          />
+
+        <div>
+          <select name="language" id="language">
+            <optgroup label="Programming Languages" defaultValue="javascript">
+              <option value="javascript">JavaScript</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+            </optgroup>
+          </select>
+          <div className="input-color-wrapper">
+            <input
+              type="color"
+              name="color-picker"
+              id="color-picker"
+              value="#6BD1FF"
+            />
+          </div>
         </div>
 
         <Button isOutline={false} text="Salvar projeto" />
