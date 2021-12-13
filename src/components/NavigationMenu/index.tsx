@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { Container } from './styles';
 
-export function Menu() {
+export function NavigationMenu() {
   return (
     <Container>
-      <h1>Menu</h1>
+      <h2>Menu</h2>
       <nav>
         <a href="">
           <Image

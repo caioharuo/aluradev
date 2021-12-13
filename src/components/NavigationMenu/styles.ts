@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: inline-block;
 
-  h1 {
+  h2 {
     font-size: 0.75rem;
     font-weight: normal;
 

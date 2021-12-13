@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Header } from '../components/Header';
-import { Menu } from '../components/Menu';
+import { NavigationMenu } from '../components/NavigationMenu';
+import { ProjectMenu } from '../components/ProjectMenu';
 import { Container } from './home';
 
 export default function Home() {
@@ -10,7 +11,12 @@ export default function Home() {
         <title>AluraDev</title>
       </Head>
       <Header />
-      <Menu />
+      <section>
+        <main>
+          <NavigationMenu />
+          <ProjectMenu />
+        </main>
+      </section>
     </Container>
   );
 }
