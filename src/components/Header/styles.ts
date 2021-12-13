@@ -8,7 +8,7 @@ export const Container = styled.header`
     justify-content: space-between;
     align-items: center;
 
-    margin: 2rem;
+    margin-bottom: 2.5rem;
 
     input {
       width: 100%;

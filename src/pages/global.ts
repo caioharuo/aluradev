@@ -46,6 +46,11 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 600;
     }
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     [disabled] {
       opacity: 0.6;
       cursor: not-allowed;
