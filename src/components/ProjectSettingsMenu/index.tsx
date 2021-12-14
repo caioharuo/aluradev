@@ -1,9 +1,14 @@
+import { FormEvent } from 'react';
 import { Button } from '../Button';
 import { Container, ProjectSettings, PersonalizationSettings } from './styles';
 
+function handleSubmitForm(event: FormEvent) {
+  event.preventDefault();
+}
+
 export function ProjectSettingsMenu() {
   return (
-    <Container>
+    <Container onSubmit={handleSubmitForm}>
       <ProjectSettings>
         <h2>Seu projeto</h2>
         <input type="text" placeholder="Nome do seu projeto" name="title" />
