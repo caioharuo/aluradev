@@ -34,6 +34,7 @@ export const Container = styled.form`
 
   select {
     color: rgba(255, 255, 255, 0.64);
+    cursor: pointer;
   }
 
   optgroup,
@@ -110,7 +111,8 @@ export const PersonalizationSettings = styled.div`
       background: transparent;
 
       max-height: 56px;
-      max-width: 272px;
+
+      cursor: pointer;
     }
 
     input[type='color']::-webkit-color-swatch {
@@ -137,6 +139,12 @@ export const PersonalizationSettings = styled.div`
       align-items: center;
       gap: 1rem;
       margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    > div {
+      flex-direction: column;
     }
   }
 `;

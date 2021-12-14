@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import { Container } from './styles';
 
@@ -9,9 +10,17 @@ export function Header() {
 
         <input type="text" placeholder="Busque por algo" />
 
-        <div className="menu-hamburguer">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/menu-icon.svg" alt="AluraDev" />
+        <div className="mobile-icons">
+          <img
+            src="/images/search-icon.svg"
+            alt="Search"
+            className="search-icon"
+          />
+          <img
+            src="/images/menu-icon.svg"
+            alt="Menu"
+            className="menu-hamburguer-icon"
+          />
         </div>
 
         <div className="user-info">

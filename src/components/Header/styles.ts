@@ -5,6 +5,12 @@ export const Container = styled.header`
   padding: 2rem;
   padding-bottom: 0;
 
+  @media (max-width: 768px) {
+    & {
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+
   > div {
     display: flex;
     justify-content: space-between;
@@ -47,16 +53,38 @@ export const Container = styled.header`
           margin-right: 2.5rem;
         }
       }
+
+      @media (max-width: 768px) {
+        & {
+          display: none;
+        }
+      }
     }
 
-    .menu-hamburguer {
+    .mobile-icons {
       display: none;
-      width: 48px;
-      height: 48px;
+
+      cursor: pointer;
+
+      img {
+        display: none;
+      }
 
       @media (max-width: 1440px) {
         & {
-          display: inline-block;
+          display: flex;
+          justify-content: space-between;
+          gap: 0.5rem;
+        }
+
+        .menu-hamburguer-icon {
+          display: inline;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .search-icon {
+          display: inline;
         }
       }
     }

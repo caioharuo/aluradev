@@ -6,7 +6,7 @@ export function ProjectSettingsMenu() {
     <Container>
       <ProjectSettings>
         <h2>Seu projeto</h2>
-        <input type="text" placeholder="Nome do seu projeto" />
+        <input type="text" placeholder="Nome do seu projeto" name="title" />
         <textarea
           name="description"
           placeholder="Descrição do seu projeto"
@@ -29,11 +29,10 @@ export function ProjectSettingsMenu() {
               type="color"
               name="color-picker"
               id="color-picker"
-              value="#6BD1FF"
+              defaultValue="#6BD1FF"
             />
           </div>
         </div>
-
         <Button isOutline={false} text="Salvar projeto" />
       </PersonalizationSettings>
     </Container>
