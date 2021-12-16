@@ -2,14 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   width: 100%;
-  padding: 2rem;
-  padding-bottom: 0;
-
-  @media (max-width: 768px) {
-    & {
-      padding: 1rem 1rem 0 1rem;
-    }
-  }
 
   > div {
     display: flex;

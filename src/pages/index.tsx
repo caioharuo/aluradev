@@ -8,11 +8,10 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>AluraDev</title>
+        <title>Home | AluraDev</title>
       </Head>
       <section>
         <main>
-          <NavigationMenu />
           <CodeEditor />
           <ProjectSettingsMenu />
         </main>

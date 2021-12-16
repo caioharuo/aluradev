@@ -1,12 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
+import Link from 'next/link';
 import { Container } from './styles';
 
 export function Header() {
   return (
     <Container>
       <div>
-        <Image src="/images/logo.svg" alt="AluraDev" width={145} height={35} />
+        <Link href="/">
+          <a>
+            <Image
+              src="/images/logo.svg"
+              alt="AluraDev"
+              width={145}
+              height={35}
+            />
+          </a>
+        </Link>
 
         <input type="text" placeholder="Busque por algo" />
 
