@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { CodeEditor } from '../components/CodeEditor';
-import { NavigationMenu } from '../components/NavigationMenu';
 import { ProjectSettingsMenu } from '../components/ProjectSettingsMenu';
 import { Container } from '../styles/home';
 

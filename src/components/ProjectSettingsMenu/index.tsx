@@ -1,4 +1,5 @@
 import { FormEvent } from 'react';
+import { useColor } from '../../hooks/useColor';
 import { Button } from '../Button';
 import { Container, ProjectSettings, PersonalizationSettings } from './styles';
 
@@ -7,6 +8,8 @@ function handleSubmitForm(event: FormEvent) {
 }
 
 export function ProjectSettingsMenu() {
+  const { borderColor, handleSetBorderColor } = useColor();
+
   return (
     <Container onSubmit={handleSubmitForm}>
       <ProjectSettings>
@@ -34,7 +37,8 @@ export function ProjectSettingsMenu() {
               type="color"
               name="color-picker"
               id="color-picker"
-              defaultValue="#6BD1FF"
+              value={borderColor}
+              onChange={(event) => handleSetBorderColor(event.target.value)}
             />
           </div>
         </div>

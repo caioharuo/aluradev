@@ -17,29 +17,6 @@ export const Container = styled.div`
     }
   }
 
-  .code-editor-border {
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-
-    padding: 2rem;
-    margin-bottom: 2rem;
-
-    border-radius: 0.5rem;
-    background-color: #6bd1ff;
-  }
-
-  img {
-    position: absolute;
-    index: 9999;
-    left: 48px;
-    top: 48px;
-
-    width: 52px;
-    height: 12px;
-  }
-
   textarea {
     resize: none;
 
@@ -63,4 +40,31 @@ export const Container = styled.div`
 
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
   }
+
+  img {
+    position: absolute;
+    index: 9999;
+    left: 48px;
+    top: 48px;
+
+    width: 52px;
+    height: 12px;
+  }
+`;
+
+interface BorderColorProps {
+  borderColor: string;
+}
+
+export const BorderColor = styled.div<BorderColorProps>`
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  border-radius: 0.5rem;
+  background-color: ${(props) => props.borderColor};
 `;

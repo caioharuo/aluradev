@@ -25,7 +25,7 @@ export function NavigationMenu() {
           </a>
         </Link>
 
-        <Link href="community">
+        <Link href="/community">
           <a
             onClick={() => setActivePage('community')}
             className={activePage === 'community' ? 'active' : ''}
