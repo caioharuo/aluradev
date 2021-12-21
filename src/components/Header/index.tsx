@@ -7,16 +7,7 @@ export function Header() {
   return (
     <Container>
       <div>
-        <Link href="/">
-          <a>
-            <Image
-              src="/images/logo.svg"
-              alt="AluraDev"
-              width={145}
-              height={35}
-            />
-          </a>
-        </Link>
+        <Image src="/images/logo.svg" alt="AluraDev" width={145} height={35} />
 
         <input type="text" placeholder="Busque por algo" />
 

@@ -1,10 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Container } from './styles';
 
 export function NavigationMenu() {
-  const [activePage, setActivePage] = useState('home');
+  const route = useRouter();
+
+  const actualRoute = route.pathname;
+
+  const [activePage, setActivePage] = useState(() => {
+    if (actualRoute === '/community') {
+      return 'community';
+    } else {
+      return 'home';
+    }
+  });
 
   return (
     <Container>
